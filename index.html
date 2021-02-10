@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="index.js" type="text/javascript"></script>
+</head>
+<body>
+<h1>Bestilling av kinobiletter</h1>
+Velg film:
+<select id="film">
+    <option>Velg film her</option>
+    <option>Snehvit og de syv dvergene</option>
+    <option>Toy Story</option>
+    <option>Løvenes konge</option>
+    <option>Shrek</option>
+    <option>Aladdin</option>
+    <option>Istid</option>
+</select>
+<br/><br/>
+Antall <input type="text" id="antall" size="2"/><span id="antallFeil" style="color: red"></span>
+<br/><br/>
+<table>
+    <tr>
+        <td>Fornavn</td><td><input type="text" id="fornavn"/></td><td id="fornavnFeil" style="color: red"></td>
+    </tr>
+    <tr>
+        <td>Etternavn</td><td><input type="text" id="etternavn"/></td><td id="etternavnFeil" style="color: red"></td>
+    </tr>
+    <tr>
+        <td>Telefonnr</td><td><input  type="text" id="telefonnr"/></td><td id="telefonnrFeil" style="color: red"></td>
+    </tr>
+    <tr>
+        <td>Epost</td><td><input type="text" id="epost"/></td><td id="epostFeil" style="color: red"></td>
+    </tr>
+    <tr>
+        <td><button onclick="reg()">Kjøp billett</button></td>
+    </tr>
+</table>
+<h3>Alle billetter</h3>
+<div id="alleBillettene"></div>
+<button onclick="slettAlle()">Slett alle billettene</button>
+</body>
+</html>
