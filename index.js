@@ -10,6 +10,8 @@ function reg() {
         antall : $("#antall").val(),
         film : $("#film").val()
     };
+
+    // her er //
     const feil = validerInput();
     if(!feil){
         billettene.push(billett);
